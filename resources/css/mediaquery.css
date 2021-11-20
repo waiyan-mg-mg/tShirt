@@ -1,0 +1,81 @@
+@media screen and (min-width: 1450px) {
+  #navigation {
+    padding: 25px;
+  }
+  #hero * {
+    font-size: 40px;
+  }
+
+  #hero .carousel-content {
+    padding-left: 120px;
+  }
+
+  #hero button {
+    border-radius: 10px;
+  }
+  #new span {
+    font-size: 40px;
+    border-radius: 10px;
+  }
+  #products .itemContainer {
+    max-height: 1000px !important;
+  }
+  #footer{
+    font-size: 40px;
+  }
+  #footer h6 {
+    font-size: 40px;
+  }
+  #footer ul li a {
+    font-size: 40px;
+  }
+  #footer ul li a i {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #about {
+    padding-bottom: 0px;
+    font-size: 12px;
+  }
+  #about .paraHeading {
+    margin-bottom: 10px;
+  }
+  #about .about-item {
+    padding: 10px 10px;
+  }
+}
+@media screen and (max-width: 767.98px) {
+  #about .about-item h3 {
+    margin: 5px 0;
+  }
+  #about .about-item:hover i {
+    transform: translateY(-5px);
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .carousel-element .overlay .btn {
+    font-size: 10px;
+    display: block;
+    margin-top: 5px;
+  }
+  #products {
+    padding-top: 1px !important;
+  }
+  #products .button-group .btn {
+    font-size: 10px;
+    margin: 0;
+  }
+  .paraHeading h1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  #products .productOverlay {
+    bottom: 0px;
+  }
+  #products .productOverlay .add_card,
+  #products .productOverlay .price {
+    font-size: 7px;
+  }
+}

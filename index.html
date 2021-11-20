@@ -1,0 +1,1343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./third_party/bootstrap5/bootstrap.css" />
+    <!-- fontawesome  -->
+    <link rel="stylesheet" href="./third_party/fontawesome/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="./third_party/fontawesome/css/fontawesome.min.css"
+    />
+    <!-- ownCarousel -->
+    <link
+      rel="stylesheet"
+      href="./third_party/owncarousel/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./third_party/owncarousel/owl.theme.default.min.css"
+    />
+    <!-- AOS -->
+    <link rel="stylesheet" href="./third_party/aos/aos.css" />
+    <!-- fav icon  -->
+    <link
+      rel="icon"
+      type="image/jpg"
+      sizes="32x32"
+      href="./data/img/favicon1.jpg"
+    />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./resources/css/style.css" />
+    <link rel="stylesheet" href="./resources/css/mediaquery.css" />
+    <title>Alibaba</title>
+  </head>
+  <body>
+    <!-- ===================== preloder =====================-->
+    <div id="preloder">
+      <div id="status">&nbsp;</div>
+    </div>
+    <!-- ===================== Navigation =====================-->
+    <nav
+      id="navigation"
+      data-aos="zoom-in"
+      data-aos-once="true"
+      data-aos-offset="-200"
+      data-aos-delay="1000"
+      data-aos-duration="1000"
+    >
+      <div class="container-md">
+        <div class="row justify-content-center g-0">
+          <div class="col col-md-2">
+            <h1 id="brand" class="fst-italic fw-bold">ALIBABA</h1>
+          </div>
+          <div class="col col-md-10 linksite text-end">
+            <ul id="link_container" class="d-none d-md-inline-block">
+              <li><a href="#">SHOP</a></li>
+              <li><a href="#products">PRODUCTS</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#contact"> CONTACT</a></li>
+            </ul>
+            <div class="toggle-icons">
+              <span
+                class="icon-one"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <i class="fas fa-shopping-cart">
+                  <span class="text-danger" id="cardNumber">0</span>
+                </i></span
+              >
+
+              <span class="toggle-open icon-two d-md-none">
+                <i class="fas fa-bars"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- overlay -->
+      <div id="overlayArea" class="overlay">
+        <a href="javascript:void(0)" class="toggle-close">&times;</a>
+        <div class="overlay-content">
+          <a href="#">SHOP</a>
+          <a href="#products">PRODUCTS</a>
+          <a href="#about">ABOUT</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+      </div>
+    </nav>
+    <!-- ===================== Hero =====================-->
+    <section id="hero">
+      <!-- bootstrap carousel start -->
+      <div class="container-fluid">
+        <div
+          id="carouselFade"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div
+                  class="col img-left d-none d-md-inline-block"
+                  data-aos="fade-right"
+                  data-aos-once="true"
+                  data-aos-delay="1000"
+                  data-aos-duration="1000"
+                >
+                  <div class="carousel-content">
+                    <h2>
+                      The most popular design <br />
+                      in <span id="typing_office"></span>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Inventore magni hic at! Laudantium perferendis sunt esse
+                      eveniet, beatae minima dolorem!
+                    </p>
+                    <button class="btn">Shop Now</button>
+                  </div>
+                </div>
+                <div
+                  class="col"
+                  data-aos="fade-left"
+                  data-aos-once="true"
+                  data-aos-delay="2000"
+                  data-aos-duration="500"
+                >
+                  <img
+                    src="./data/Shirt/Hero cover/cover1.jpg"
+                    class="d-block w-100 carousel-image"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col img-left d-none d-md-inline-block">
+                  <div class="carousel-content">
+                    <h2>
+                      The most popular design <br />
+                      in <span id="typing_boy">Boys</span>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Inventore magni hic at! Laudantium perferendis sunt esse
+                      eveniet, beatae minima dolorem!
+                    </p>
+                    <a class="btn">Shop Now</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <img
+                    src="./data/Shirt/Hero cover/cover2.jpg"
+                    class="d-block w-100 carousel-image"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col img-left d-none d-md-inline-block">
+                  <div class="carousel-content">
+                    <h2>
+                      The most popular design <br />
+                      in <span id="typing_kid">Kids</span>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Inventore magni hic at! Laudantium perferendis sunt esse
+                      eveniet, beatae minima dolorem!
+                    </p>
+                    <button class="btn">Shop Now</button>
+                  </div>
+                </div>
+                <div class="col">
+                  <img
+                    src="./data/Shirt/Hero cover/cover3.jpg"
+                    class="d-block w-100 carousel-image"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col img-left d-none d-md-inline-block">
+                  <div class="carousel-content">
+                    <h2>
+                      The most popular design <br />
+                      in <span id="typing_medium">Medium-Age</span>
+                    </h2>
+                    <p>
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                      Inventore magni hic at! Laudantium perferendis sunt esse
+                      eveniet, beatae minima dolorem!
+                    </p>
+                    <button class="btn">Shop Now</button>
+                  </div>
+                </div>
+                <div class="col">
+                  <img
+                    src="./data/Shirt/Hero cover/cover4.jpeg"
+                    class="d-block w-100 carousel-image"
+                    alt="..."
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <span
+            id="carousel-forward"
+            type="button"
+            data-bs-target="#carouselFade"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </span>
+        </div>
+      </div>
+      <!-- bootstrap carousel end -->
+    </section>
+    <!-- ===================== New =====================-->
+    <section
+      id="new"
+      data-aos="zoom-in-up"
+      data-aos-once="true"
+      data-aos-duration="2000"
+    >
+      <div class="paraHeading">
+        <h1>What's is new in <span>2021</span></h1>
+      </div>
+      <div class="container-fluid">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new1.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new2.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new3.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new1.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new2.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new3.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="carousel-element">
+              <img src="./data/Shirt/News/new2.jpg" alt="image" />
+              <div class="overlay">
+                <div class="overlay-btns">
+                  <span class="btn">Shop Now</span>
+                  <span class="btn">Contact</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== Products =====================-->
+    <section
+      id="products"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1500"
+    >
+      <div class="paraHeading">
+        <h1>Explore Our qulity <span>Products</span></h1>
+      </div>
+      <!-- isotope start -->
+      <!-- isotope buttons -->
+      <div class="container">
+        <div class="button-group filter-button-group">
+          <button class="btn" data-filter="*">All Products</button>
+          <button class="btn" data-filter=".office">Office</button>
+          <button class="btn" data-filter=".long">Long</button>
+          <button class="btn" data-filter=".short">Short</button>
+          <button class="btn" data-filter=".kid">Kids</button>
+        </div>
+      </div>
+      <!-- isotope items-->
+      <div class="container-md">
+        <div class="grid row itemContainer">
+          <!-- long -->
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long1.jpeg"
+                alt="image"
+                class="img-fluid"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long2.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long3.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long4.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long5.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long6.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item long col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/long/long7.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- office -->
+          <div class="element-item office col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Office/office0.jpg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item office col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Office/office1.jpg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item office col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Office/office2.jpg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- short -->
+          <div class="element-item short col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/short/short0.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item short col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/short/short1.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item short col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/short/short3.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item short col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/short/short4.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item short col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/short/short5.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item short col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/short/short6.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- kid -->
+          <div class="element-item kid col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Kids/kid1.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item kid col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Kids/kid2.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item kid col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Kids/kid3.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item kid col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Kids/kid4.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item kid col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Kids/kid5.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="element-item kid col-3">
+            <div class="isotopCustom">
+              <img
+                src="./data/Shirt/allproduct/Kids/kid6.jpeg"
+                class="img-fluid"
+                alt="image"
+              />
+              <div class="productOverlay">
+                <span class="price"> </span>
+                <button class="add_card">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+          <!-- kid end -->
+        </div>
+      </div>
+      <!-- isotope end -->
+    </section>
+    <!-- ===================== About =====================-->
+    <section id="about">
+      <div class="paraHeading">
+        <h1>About <span>Us</span></h1>
+      </div>
+      <div class="container-md">
+        <div class="row text-center">
+          <div
+            class="col-sm-4"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
+            <div class="about-item">
+              <h3>
+                <i class="fas fa-tshirt"></i>
+              </h3>
+              <h3>Good Quility</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, similique enim vel, neque quae id maiores quod
+                accusamus fugit recusandae aut ex aspernatur omnis architecto
+                aperiam repellat illo. Consequuntur, vitae.
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div
+              class="about-item"
+              data-aos="fade-up"
+              data-aos-once="true"
+              data-aos-duration="1500"
+            >
+              <h3>
+                <i class="fas fa-shipping-fast"></i>
+              </h3>
+              <h3>Fast Service</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, similique enim vel, neque quae id maiores quod
+                accusamus fugit recusandae aut ex aspernatur omnis architecto
+                aperiam repellat illo. Consequuntur, vitae.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-sm-4"
+            data-aos="fade-up"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
+            <div class="about-item">
+              <h3>
+                <i class="fas fa-thumbs-up"></i>
+              </h3>
+              <h3>Easy to Buy</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Tempore, similique enim vel, neque quae id maiores quod
+                accusamus fugit recusandae aut ex aspernatur omnis architecto
+                aperiam repellat illo. Consequuntur, vitae.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== Blog =====================-->
+    <section id="blog">
+      <div class="paraHeading">
+        <h1>Stay Update In <span>Fashion</span></h1>
+      </div>
+      <div class="container-md">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+          <!-- col 1 -->
+          <div
+            class="col"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
+            <div class="card h-100">
+              <img
+                src="./data/Shirt/Blog/HOWTODRESSWELL.jpg"
+                class="card-img-top"
+                alt="image"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  HOW TO DRESS WELL:THE 15 RULES ALL MEN SHOULD LEARN
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, mollitia repudiandae laboriosam, nam dicta
+                  voluptatibus officiis ea praesentium maiores beatae
+                </p>
+                <button
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#blog1"
+                >
+                  See More..
+                </button>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- bootstrap modal for blog1 -->
+          <div
+            class="modal fade"
+            id="blog1"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    HOW TO DRESS WELL:THE 15 RULES ALL MEN SHOULD LEARN
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col 2 -->
+          <div
+            class="col"
+            data-aos="fade-right"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
+            <div class="card h-100">
+              <img
+                src="./data/Shirt/Blog/Italian.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  7 Ways to Channel the Effortless Elegance of Italian Style
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, mollitia repudiandae laboriosam, nam dicta
+                  voluptatibus officiis ea praesentium maiores beatae
+                  repudiandae laboriosam
+                </p>
+                <button
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#blog2"
+                >
+                  See More..
+                </button>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 5 hr ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- bootstrap modal for blog2  -->
+          <div
+            class="modal fade"
+            id="blog2"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    7 Ways to Channel the Effortless Elegance of Italian Style
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col 3 -->
+          <div
+            class="col"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
+            <div class="card h-100">
+              <img
+                src="./data/Shirt/Blog/men.webp"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  THE BEST MEN'S SEPARATES COMBINATIONS
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, mollitia repudiandae laboriosam, nam dicta
+                  voluptatibus officiis ea praesentium maiores beatae
+                  repudiandae laboriosam mollitia repudiandae laboriosam
+                </p>
+                <button
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#blog3"
+                >
+                  See More..
+                </button>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 14 hr ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- bootstrap modal for blog3  -->
+          <div
+            class="modal fade"
+            id="blog3"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    THE BEST MEN'S SEPARATES COMBINATIONS
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- col 4 -->
+          <div
+            class="col"
+            data-aos="fade-left"
+            data-aos-once="true"
+            data-aos-duration="1500"
+          >
+            <div class="card h-100">
+              <img
+                src="./data/Shirt/Blog/suspenders-style.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  How to Wear Suspenders:Easy Tips for Every Occasion
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ratione, mollitia repudiandae laboriosam, nam dicta
+                  voluptatibus officiis ea praesentium maiores beatae
+                </p>
+                <button
+                  class="btn"
+                  data-bs-toggle="modal"
+                  data-bs-target="#blog4"
+                >
+                  See More..
+                </button>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 1 day ago</small>
+              </div>
+            </div>
+          </div>
+          <!-- bootstrap modal for blog4  -->
+          <div
+            class="modal fade"
+            id="blog4"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    How to Wear Suspenders:Easy Tips for Every Occasion
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                    facere minima doloribus a? Magnam aliquam ea molestiae
+                    asperiores nam libero numquam error, eaque mollitia ullam
+                    nulla quos esse quibusdam rerum dolore voluptate reiciendis
+                    nesciunt laboriosam quae, animi recusandae et porro!
+                    Voluptatum soluta, dicta quis aliquid beatae laudantium
+                    officia earum architecto?
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== Contact =====================-->
+    <section
+      id="contact"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1500"
+    >
+      <div class="paraHeading">
+        <h1>
+          If you have any request,<br class="d-sm-none" />
+          you can contact <span>anytime</span>
+        </h1>
+      </div>
+      <div class="container-md">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-xl-10">
+            <!-- bootstrap form start -->
+            <form action="#contact">
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <div class="input-group">
+                  <input
+                    id="email"
+                    type="text"
+                    class="form-control"
+                    placeholder="username"
+                    aria-label="Recipient's username"
+                    aria-describedby="basic-addon2"
+                  />
+                  <span class="input-group-text" id="basic-addon2"
+                    >@example.com</span
+                  >
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <div class="form-floating">
+                  <textarea
+                    class="form-control"
+                    placeholder="Leave a comment here"
+                    id="message"
+                    style="height: 100px"
+                  ></textarea>
+                  <label for="message" id="message_typing"></label>
+                </div>
+              </div>
+              <div class="text-end">
+                <button type="submit" class="btn">Submit</button>
+              </div>
+            </form>
+            <!-- bootstrap form start -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===================== footer =====================-->
+    <section
+      id="footer"
+      class="mt-5"
+      data-aos="fade-up"
+      data-aos-once="true"
+      data-aos-duration="1500"
+    >
+      <div class="container-md">
+        <div class="row">
+          <div class="col">
+            <div class="useful-links">
+              <h6>Useful Links</h6>
+              <ul>
+                <li><a href="#products">products</a></li>
+                <li><a href="#">back to home</a></li>
+                <li><a href="#">how to buy</a></li>
+                <li><a href="#">customer reviews</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="user">
+              <h6>User</h6>
+              <ul>
+                <li><a href="#">privacy</a></li>
+                <li><a href="#">cookies</a></li>
+                <li><a href="#">help</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col">
+            <div class="office-information">
+              <h6>Our Information</h6>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marked-alt"></i>
+                  3556 Beech Street,San Francisco, California, CA 94108
+                </li>
+                <li>
+                  <i class="fas fa-phone-square"></i
+                  ><a href="tel:+01 584 562">+01 584 562</a>
+                </li>
+                <li>
+                  <i class="fas fa-envelope"></i
+                  ><a href="mailto:alibaba@gmail.com">alibaba@gmail.com</a>
+                </li>
+                <li>
+                  <a href="wwww.facebook.com"
+                    ><i class="fab fa-facebook"></i
+                  ></a>
+                  <a href="wwww.messenger.com"
+                    ><i class="fab fa-facebook-messenger"></i
+                  ></a>
+                  <a href="wwww.twitter.com"><i class="fab fa-twitter"></i></a
+                  ><a href="wwww.youtube.com"><i class="fab fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- payment box start -->
+    <div
+      id="paymentbox"
+      class="modal fade"
+      id="paymentbox"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Choose The Best Payment For You
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row text-center">
+              <div class="col-12">
+              <span>CB Pay</span> <img src="./data/img/CBPay.png" class="img-fluid" alt="image" />
+              </div>
+              <div class="col-12 mb-2">
+                <span>KBZ Pay</span>    <img src="./data/img/kbz.png" class="img-fluid" alt="image" />
+              </div>
+              <div class="col-12 mb-1">
+                <span>Paypal</span>
+                <img
+                  src="./data/img/logo-paypal.jpg"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+              <div class="col-12 ">
+                <span>WaveMoney</span>
+                <img
+                  src="./data/img/WaveMoney.png"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- payment box start -->
+
+    <!-------------------bootstrap modal box for add to card items start------------------->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              <div class="paraHeading">Your Total <span>Card</span></div>
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body user-select-none">
+            <table class="table table-responsive" id="totalTable">
+              <tbody>
+                <tr style="visibility: hidden">
+                  <td>
+                    <img alt="image" class="img-fluid" />
+                  </td>
+                  <td>
+                    <i class="fas fa-plus-circle amountInc"></i
+                    ><span class="amount_area">14</span>
+                    <i class="fas fa-minus-circle amountDec"></i>
+                  </td>
+                  <td class="price_area">890 <span>MMK</span></td>
+                  <td><i class="fas fa-trash-alt"></i></td>
+                </tr>
+              </tbody>
+              <tfoot class="border-1">
+                <tr>
+                  <th colspan="2">Total MMK</th>
+                  <th id="totalField">0<span>MMK</span></th>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#paymentbox"
+              data-bs-dismiss="modal"
+            >
+             Choose Payment Method
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------bootstrap modal box for add to card items end------------------->
+    <!--  Bootstrap Bundle with Popper -->
+    <script src="./third_party/bootstrap5/bootstrap.bundle.js"></script>
+    <!-- Jquery -->
+    <script src="./third_party/JQuery.js"></script>
+    <!-- Own Carousel -->
+    <script src="./third_party/owncarousel/owl.carousel.min.js"></script>
+    <!-- isotope -->
+    <script src="./third_party/isotope.pkgd.min.js"></script>
+    <!-- AOS animination on scroll -->
+    <script src="./third_party/aos/aos.js"></script>
+    <!-- auto typing -->
+    <script src="./third_party/autotyping.min.js"></script>
+    <!-- custom js -->
+    <script src="./resources/js/script.js"></script>
+    <!--  card -->
+    <script src="./resources/js/card.js"></script>
+  </body>
+</html>
