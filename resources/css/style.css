@@ -503,8 +503,10 @@ a {
   cursor: pointer;
 }
 
-/* #paymentbox .modal-body span */
-/* add other style in here  */
+
+#paymentbox .modal-body img[src="./data/img/KBZ.png"]{
+  width: 20%;
+}
 /* =============== total table =============== */
 #totalTable img {
   width: 6vw;
