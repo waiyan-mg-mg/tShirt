@@ -487,26 +487,6 @@ a {
 #footer .fa-youtube {
   color: #cd201f;
 }
-/* =============== payment box =============== */
-#paymentbox .modal-title {
-  color: var(--blue);
-}
-
-#paymentbox .modal-body span{
-  color: var(--gold);
-}
-
-#paymentbox .modal-body img {
-  max-width: 30%;
-  height: auto;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-
-#paymentbox .modal-body img[src="./data/img/KBZ.png"]{
-  width: 20%;
-}
 /* =============== total table =============== */
 #totalTable img {
   width: 6vw;
@@ -522,4 +502,28 @@ a {
 }
 #totalTable span {
   color: var(--gold);
+}
+/* =============== shipping  box =============== */
+#shippingManage .modal-title,#shippingManage span{
+color: var(--gold);
+}
+
+/* =============== payment box =============== */
+#paymentbox .modal-title {
+  color: var(--blue);
+}
+
+#paymentbox .modal-body span {
+  color: var(--gold);
+}
+
+#paymentbox .modal-body img {
+  max-width: 30%;
+  height: auto;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+#paymentbox .modal-body img[src="./data/img/KBZ.png"] {
+  width: 20%;
 }

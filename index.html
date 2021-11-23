@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="./third_party/bootstrap5/bootstrap.css" />
+    <link rel="stylesheet" href="./third_party/bootstrap5/bootstrap.min.css" />
     <!-- fontawesome  -->
     <link rel="stylesheet" href="./third_party/fontawesome/css/all.min.css" />
     <link
@@ -1189,70 +1189,6 @@
         </div>
       </div>
     </section>
-    <!-- payment box start -->
-    <div
-      id="paymentbox"
-      class="modal fade"
-      id="paymentbox"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="staticBackdropLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="staticBackdropLabel">
-              Choose The Best Payment For You
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <div class="row text-center">
-              <div class="col-12">
-              <span>CB Pay</span> <img src="./data/img/CBPay.png" class="img-fluid" alt="image" />
-              </div>
-              <div class="col-12 mb-2">
-                <span>KBZ Pay</span>    <img src="./data/img/KBZ.png" class="img-fluid " alt="image" />
-              </div>
-              <div class="col-12 mb-1">
-                <span>Paypal</span>
-                <img
-                  src="./data/img/paypal.png"
-                  class="img-fluid"
-                  alt="image"
-                />
-              </div>
-              <div class="col-12 ">
-                <span>WaveMoney</span>
-                <img
-                  src="./data/img/WaveMoney.png"
-                  class="img-fluid"
-                  alt="image"
-                />
-              </div>
-            </div>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- payment box end -->
-
     <!-------------------bootstrap modal box for add to card items start------------------->
     <div
       class="modal fade"
@@ -1312,18 +1248,265 @@
               type="button"
               class="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target="#paymentbox"
+              data-bs-target="#shippingManage"
               data-bs-dismiss="modal"
             >
-             Choose Payment Method
+              Manage Deliver Options
             </button>
           </div>
         </div>
       </div>
     </div>
     <!-------------------bootstrap modal box for add to card items end------------------->
+    <!-- shipping modal start -->
+    <div
+      class="modal fade"
+      id="shippingManage"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title text-primary">Please fill out your shipping info</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form id="shippingForm" >
+              <div class="shipping-email">
+                <span> Enter your email and we'll contact you</span>
+                <div class="form-floating mb-3 mt-3">
+                  <input
+                    type="email"
+                    class="form-control "
+                    id="floatingInput"
+                    placeholder="name@example.com"
+                    required
+                  />
+                  <label for="floatingInput" class="text-muted"
+                    >Enter Your email</label
+                  >
+                  <div class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                  <div class="form-check mt-3">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      value=""
+                      id="flexCheckChecked"
+                      checked
+                    />
+                    <label class="form-check-label" for="flexCheckChecked">
+                      Keep me up to date.
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="deliverInfo">
+                <span>Contact Your Info</span>
+                <!-- name -->
+                <div class="form-floating mb-3 mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="name"
+                    placeholder="Name"
+                    required
+                  />
+                  <label for="name" class="text-muted">Name</label>
+                </div>
+                <!-- address -->
+                <div class="form-floating mb-3 mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Address"
+                    required
+                  />
+                  <label for="address" class="text-muted">Address</label>
+                </div>
+                <!-- apartment -->
+                <div class="form-floating mb-3 mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="address"
+                    placeholder="Address"
+                  />
+                  <label for="address" class="text-muted"
+                    >Apartment,suite,etc(optional)</label
+                  >
+                </div>
+                <!-- City -->
+                <div class="form-floating mb-3 mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="city"
+                    placeholder="City"
+                    required
+                  />
+                  <label for="city" class="text-muted">City</label>
+                  <span class="form-text">you can fill both english or myanmar</span>
+                </div>
+                <!-- State Region -->
+                <div class="form-floating mb-3 mt-2">
+                  <select
+                    class="form-select"
+                    aria-label="Default select"
+                    aria-placeholder="state"
+                    required
+                  >
+                    <option value=""></option>
+                    <option value="Yangon">Yangon</option>
+                    <option value="Mandalay">Mandalay</option>
+                    <option value="Kachin">Kachin</option>
+                    <option value="Sagaing">Sagaing</option>
+                    <option value="Rakhine">Rakhine</option>
+                    <option value="Ayeyarwady">Ayeyarwady</option>
+                    <option value="Mon">Mon</option>
+                    <option value="Bago">Bago</option>
+                    <option value="Tanintharyi">Tanintharyi</option>
+                    <option value="Kayah">Kayah</option>
+                    <option value="Kayin">Kayin</option>
+                    <option value="Shan">Shan</option>
+                    <option value="Magwe">Magwe</option>
+                    <option value="Chin">Chin</option>
+                  </select>
+                  <label for="city" class="">State</label>
+                </div>
+                <!--Phone -->
+                <div class="form-floating mb-3 mt-2">
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="phone"
+                    placeholder="Phone"
+                    required
+                  />
+                  <label for="phone" class="text-muted">Phone</label>
+                  <span class="form-text"
+                    >In case we need to contact you about your order.</span
+                  >
+                </div>
+                <div class="text-center">
+                  <button type="submit" id="submit" class="btn btn-primary">Comfirm</button>
+                </div>
+            </form>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-target="#staticBackdrop"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+            >
+              Return Back
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              id="choosePayment"
+              data-bs-target="#paymentbox"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+            >
+              Choose  payment method
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- shipping modal end -->
+    <!-- payment box start -->
+    <div
+      id="paymentbox"
+      class="modal fade"
+      id="paymentbox"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">
+              Choose The Best Payment For You
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="row text-center">
+              <div class="col-12">
+                <span>CB Pay</span>
+                <img src="./data/img/CBPay.png" class="img-fluid" alt="image" />
+              </div>
+              <div class="col-12 mb-2">
+                <span>KBZ Pay</span>
+                <img src="./data/img/KBZ.png" class="img-fluid" alt="image" />
+              </div>
+              <div class="col-12 mb-1">
+                <span>Paypal</span>
+                <img
+                  src="./data/img/paypal.png"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+              <div class="col-12">
+                <span>WaveMoney</span>
+                <img
+                  src="./data/img/WaveMoney.png"
+                  class="img-fluid"
+                  alt="image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+              data-bs-toggle="modal"
+              data-bs-target="#shippingManage"
+            >
+              Return Back
+            </button>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- payment box end -->
+
     <!--  Bootstrap Bundle with Popper -->
-    <script src="./third_party/bootstrap5/bootstrap.bundle.js"></script>
+    <script src="./third_party/bootstrap5/bootstrap.bundle.min.js"></script>
     <!-- Jquery -->
     <script src="./third_party/JQuery.js"></script>
     <!-- Own Carousel -->
@@ -1338,5 +1521,7 @@
     <script src="./resources/js/script.js"></script>
     <!--  card -->
     <script src="./resources/js/card.js"></script>
+    <!-- deliverOption -->
+    <script src="./resources/js/deliverOptions.js"></script>
   </body>
 </html>
