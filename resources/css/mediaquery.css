@@ -1,15 +1,43 @@
 @media screen and (min-width: 1450px) {
-  #navigation {
-    padding: 25px;
+  #navigation #brand,
+  #navigation #link_container li {
+    margin-top: 35px;
+  }
+  #navigation #brand {
+    font-size: 80px;
+  }
+  #navigation #link_container li{
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  #navigation #link_container li a {
+    font-size: 2.6rem;
+  }
+  #navigation .toggle-icons .icon-one {
+    font-size: 60px;
+  }
+  .toggle-icons .icon-one #cardNumber {
+    font-size: 0.7em;
+    position: absolute;
+    top: -1px;
+    right: -5px;
   }
   #hero * {
     font-size: 40px;
   }
-
   #hero .carousel-content {
-    padding-left: 120px;
+    padding-left: 150px;
+    padding-top: 150px;
   }
-
+  #hero .carousel-content h2{
+    font-size: 60px;
+  }
+  #hero .carousel-content span{
+    font-size: 60px;
+  }
+  #hero .carousel-content p{
+    font-size: 50px;
+  }
   #hero button {
     border-radius: 10px;
   }
@@ -20,7 +48,7 @@
   #products .itemContainer {
     max-height: 1000px !important;
   }
-  #footer{
+  #footer {
     font-size: 40px;
   }
   #footer h6 {
@@ -31,6 +59,11 @@
   }
   #footer ul li a i {
     font-size: 45px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  #navigation {
+    padding: 10px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -70,12 +103,29 @@
     font-size: 15px;
     margin-bottom: 10px;
   }
-
   #products .productOverlay {
     bottom: 0px;
   }
   #products .productOverlay .add_card,
   #products .productOverlay .price {
     font-size: 7px;
+  }
+  #about .about-item {
+    padding: 10px 6px;
+  }
+  #about .about-item h3 i {
+    font-size: 20px;
+  }
+  #about .about-item p {
+    text-align: justify;
+    word-spacing: -1px;
+    line-height: 1.5em;
+    font-size: 90%;
+  }
+  #blog .card .card-title {
+    font-size: 90%;
+  }
+  #blog .card .card-text {
+    font-size: 14px;
   }
 }

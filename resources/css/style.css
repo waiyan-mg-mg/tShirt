@@ -47,10 +47,6 @@ a {
   color: var(--blue);
 }
 
-.container-fluid {
-  padding: 0;
-}
-
 /* =============== Navigation ===============*/
 #preloder {
   background-color: #fff;
@@ -60,6 +56,9 @@ a {
   left: 0;
   right: 0;
   z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #status {
@@ -67,11 +66,6 @@ a {
   background-repeat: no-repeat;
   width: 70px;
   height: 70px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -25px;
-  margin-left: -25px;
 }
 /* =============== Navigation =============== */
 #navigation {
@@ -181,6 +175,10 @@ a {
 /* =============== Hero =============== */
 #hero {
   background-color: var(--whiteC);
+}
+
+#hero .container-fluid {
+  padding: 0;
 }
 
 #hero .carousel-image {
@@ -504,8 +502,9 @@ a {
   color: var(--gold);
 }
 /* =============== shipping  box =============== */
-#shippingManage .modal-title,#shippingManage span{
-color: var(--gold);
+#shippingManage .modal-title,
+#shippingManage span {
+  color: var(--gold);
 }
 
 /* =============== payment box =============== */
