@@ -229,7 +229,7 @@
     <!-- ===================== New =====================-->
     <section
       id="new"
-      data-aos="zoom-in-up"
+      data-aos="zoom-in"
       data-aos-once="true"
       data-aos-duration="2000"
     >
@@ -1249,7 +1249,7 @@
               type="button"
               class="btn btn-primary"
               data-bs-toggle="modal"
-              data-bs-target="#shippingManage"
+              data-bs-target="#chooseTownship"
               data-bs-dismiss="modal"
             >
               Manage Deliver Options
@@ -1259,6 +1259,102 @@
       </div>
     </div>
     <!-------------------bootstrap modal box for add to card items end------------------->
+    <!-- choose township start -->
+<div class="modal fade" id="chooseTownship" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title text-primary" id="staticBackdropLabel">Delivery Order System</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h6 class="text-center">CHOOSE TOWNSHIP</h6>
+        <div class="container-fluid">
+        <table  class="table text-center table-responsive">
+        <thead>
+          <tr>
+            <th>မြို့နယ်</th>
+            <th>‌ဈေးနှုန်းများ</th>
+          </tr>
+        </thead>
+         <tbody>
+          <tr class="townBtn">
+            <td class="town">ကျောက်တံတား</td>
+            <td ><span class="deli_price">1500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">စမ်းချောင်း</td>
+            <td ><span class="deli_price">2000</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">ကြည့်မြင်တိုင်</td>
+            <td ><span class="deli_price">2500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">တာမွေ</td>
+            <td ><span class="deli_price">2500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">တောင်ဥက္ကလာပ</td>
+            <td ><span class="deli_price">2500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">ဒေါ်ပုံ</td>
+            <td ><span class="deli_price">2000</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">ပန်းဘဲတန်း</td>
+            <td ><span class="deli_price">2000</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">ပုစွန်တောင်</td>
+            <td ><span class="deli_price">1500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">ဗဟန်း</td>
+            <td ><span class="deli_price">2500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">ဗိုလ်တထောင်</td>
+            <td ><span class="deli_price">1500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">လမ်းမတော်</td>
+            <td ><span class="deli_price">2500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">လသာ</td>
+            <td ><span class="deli_price">2000</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">သင်္ဃန်းကျွန်း</td>
+            <td ><span class="deli_price">2500</span> ကျပ်</td>
+          </tr>
+          <tr class="townBtn">
+            <td class="town">သာကေတ</td>
+            <td ><span class="deli_price">2000</span> ကျပ်</td>
+          </tr>
+         </tbody>
+        </table>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button"
+        class="btn btn-secondary"
+        data-bs-target="#staticBackdrop"
+        data-bs-dismiss="modal"
+        data-bs-toggle="modal">Return Back</button>
+        <button  type="button"
+        class="btn btn-primary "
+        id="nextBtn"
+        data-bs-target="#shippingManage"
+        data-bs-dismiss="modal"
+        data-bs-toggle="modal">Next</button>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- choose township end -->
     <!-- shipping modal start -->
     <div
       class="modal fade"
@@ -1281,39 +1377,73 @@
             ></button>
           </div>
           <div class="modal-body">
+            <h6 class="text-center">ORDER SUMMARY</h6>
+            <table class="table table-responsive table-striped">
+              <tr >
+                <td></td>
+                <td></td>
+              <td >
+                Cost
+              </td>
+            </tr>
+                <tr>
+                  <td>
+                    Cloths
+                  </td>
+                  <td>
+                    <button class="btn" data-bs-target="#staticBackdrop"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal">Details..</button>
+                  </td>
+                  <td>
+                   <span id="clothsTotal">0</span> MMK
+                  </td>
+                </tr>
+                <tr>
+                  <td>Shipping To</td>
+                  <td id="deliTownship">Tarmwe</td>
+                  <td><span id="deliPrice">0</span> MMK</td>
+                </tr>
+             
+             
+                <tr>
+                  <td colspan="2">Your Total</td>
+                  <td><span id="FinalTotal">0</span> MMK</td>
+                </tr>
+             
+            </table>
             <form id="shippingForm" >
-              <div class="shipping-email">
-                <span> Enter your email and we'll contact you</span>
-                <div class="form-floating mb-3 mt-3">
-                  <input
-                    type="email"
-                    class="form-control form-control-sm "
-                    id="floatingInput"
-                    placeholder="name@example.com"
-                    required
-                  />
-                  <label for="floatingInput" class="text-muted"
-                    >Enter Your email</label
-                  >
-                  <div class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
-                  <div class="form-check mt-3">
-                    <input
-                      class="form-check-input"
-                      type="checkbox"
-                      value=""
-                      id="flexCheckChecked"
-                      checked
-                    />
-                    <label class="form-check-label" for="flexCheckChecked">
-                      Keep me up to date.
-                    </label>
-                  </div>
-                </div>
-              </div>
               <div class="deliverInfo">
                 <span>Contact Your Info</span>
+                <!-- email -->
+                <div class="shipping-email">
+                  <div class="form-floating mb-3 mt-3">
+                    <input
+                      type="email"
+                      class="form-control form-control-sm "
+                      id="floatingInput"
+                      placeholder="name@example.com"
+                    />
+                    <label for="floatingInput" class="text-muted"
+                      > Your email(optional)/သင့်အီးမေးလ်</label
+                    >
+                    <div class="form-text">
+                      We'll never share your email with anyone else.
+                    </div>
+                    <div class="form-check mt-3">
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        value=""
+                        id="flexCheckChecked"
+                        checked
+                      />
+                      <label class="form-check-label" for="flexCheckChecked">
+                        Keep me up to date.
+                      </label>
+                    </div>
+                  </div>
+                </div>
                 <!-- name -->
                 <div class="form-floating mb-3 mt-2">
                   <input
@@ -1323,7 +1453,7 @@
                     placeholder="Name"
                     required
                   />
-                  <label for="name" class="text-muted">Name</label>
+                  <label for="name" class="text-muted">Name/နာမည်</label>
                 </div>
                 <!-- address -->
                 <div class="form-floating mb-3 mt-2">
@@ -1334,57 +1464,7 @@
                     placeholder="Address"
                     required
                   />
-                  <label for="address" class="text-muted">Address</label>
-                </div>
-                <!-- apartment -->
-                <div class="form-floating mb-3 mt-2">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="address"
-                    placeholder="Address"
-                  />
-                  <label for="address" class="text-muted"
-                    >Apartment,suite,etc(optional)</label
-                  >
-                </div>
-                <!-- City -->
-                <div class="form-floating mb-3 mt-2">
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="city"
-                    placeholder="City"
-                    required
-                  />
-                  <label for="city" class="text-muted">City</label>
-                  <span class="form-text">you can fill both english or myanmar</span>
-                </div>
-                <!-- State Region -->
-                <div class="form-floating mb-3 mt-2">
-                  <select
-                    class="form-select"
-                    aria-label="Default select"
-                    aria-placeholder="state"
-                    required
-                  >
-                    <option value=""></option>
-                    <option value="Yangon">Yangon</option>
-                    <option value="Mandalay">Mandalay</option>
-                    <option value="Kachin">Kachin</option>
-                    <option value="Sagaing">Sagaing</option>
-                    <option value="Rakhine">Rakhine</option>
-                    <option value="Ayeyarwady">Ayeyarwady</option>
-                    <option value="Mon">Mon</option>
-                    <option value="Bago">Bago</option>
-                    <option value="Tanintharyi">Tanintharyi</option>
-                    <option value="Kayah">Kayah</option>
-                    <option value="Kayin">Kayin</option>
-                    <option value="Shan">Shan</option>
-                    <option value="Magwe">Magwe</option>
-                    <option value="Chin">Chin</option>
-                  </select>
-                  <label for="city" class="">State</label>
+                  <label for="address" class="text-muted">Address/လိပ်စာ</label>
                 </div>
                 <!--Phone -->
                 <div class="form-floating mb-3 mt-2">
@@ -1395,7 +1475,7 @@
                     placeholder="Phone"
                     required
                   />
-                  <label for="phone" class="text-muted">Phone</label>
+                  <label for="phone" class="text-muted">Phone/ဖုန်း</label>
                   <span class="form-text"
                     >In case we need to contact you about your order.</span
                   >
@@ -1410,7 +1490,7 @@
             <button
               type="button"
               class="btn btn-secondary"
-              data-bs-target="#staticBackdrop"
+              data-bs-target="#chooseTownship"
               data-bs-dismiss="modal"
               data-bs-toggle="modal"
             >

@@ -13,7 +13,6 @@
   --goldBlack: #cf7500;
   --black: #1a1c20;
   --blue: #0051f3;
-  caret-color: #1a1c20;
 }
 
 html {
@@ -80,11 +79,11 @@ a {
   font-size: 40px;
   font-family: casterllar;
   color: var(--gold);
-  margin-top: 5px;
+  /* margin-top: 5px; */
 }
 
 .linksite {
-  padding-top: 8px;
+  /* padding-top: 8px; */
   cursor: pointer;
 }
 
@@ -501,12 +500,35 @@ a {
 #totalTable span {
   color: var(--gold);
 }
+/* =============== choose township  box =============== */
+
+#chooseTownship .modal-body h6 {
+  color: var(--blue);
+}
+
+#chooseTownship .deli_price{
+  color: var(--gold);
+}
 /* =============== shipping  box =============== */
 #shippingManage .modal-title,
-#shippingManage span {
+#shippingManage span,
+#shippingManage h6 {
   color: var(--gold);
 }
 
+#shippingManage table,#shippingManage tr {
+  border: 2px dashed var(--blue);
+}
+
+#shippingManage table .btn {
+  background-color: var(--gold);
+  color: var(--whiteC);
+  transition: 300ms ease-in-out;
+}
+
+#shippingManage table .btn:active {
+  background-color: var(--goldBlack);
+}
 /* =============== payment box =============== */
 #paymentbox .modal-title {
   color: var(--blue);
